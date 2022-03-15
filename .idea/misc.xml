@@ -3,12 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/drawable/box1.xml" value="0.3085" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/drawable/box2.xml" value="0.3085" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/drawable/login_button.xml" value="0.3085" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/drawable/search.xml" value="0.3085" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/font/montserrat_alternates_bold.xml" value="0.3848958333333333" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/font/nunito_sans_bold.xml" value="0.20625" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2646256054183852" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

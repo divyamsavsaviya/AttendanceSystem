@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
         Log.d("LOG--", "onCreate: Splash Activity launched" );
         Handler handler = new Handler();
         handler.postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         }, 2500);
