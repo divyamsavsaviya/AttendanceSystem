@@ -9,9 +9,12 @@
         <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/drawable/search.xml" value="0.3085" />
         <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/font/montserrat_alternates_bold.xml" value="0.3848958333333333" />
         <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/font/nunito_sans_bold.xml" value="0.20625" />
-        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_home.xml" value="0.3546875" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
         <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/layout/fragment_base.xml" value="0.33" />
+        <entry key="..\:/Users/HP800g1/AttendanceSystem/app/src/main/res/menu/menu.xml" value="0.3546875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2646256054183852" />
       </map>

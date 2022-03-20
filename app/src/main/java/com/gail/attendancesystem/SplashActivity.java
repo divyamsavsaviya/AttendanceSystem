@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +20,14 @@ public class SplashActivity extends AppCompatActivity {
         Log.d("LOG--", "onCreate: Splash Activity launched" );
         Handler handler = new Handler();
         handler.postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            Intent intent;
+            if(user==null){
+                intent = new Intent(SplashActivity.this, LoginActivity.class);
+            }
+            else {
+                intent = new Intent(SplashActivity.this, Home.class);
+            }
             startActivity(intent);
             finish();
         }, 2500);
