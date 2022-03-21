@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/rich_black"
     android:layout_height="match_parent"
     tools:context=".Base">
@@ -24,7 +25,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#888888"
                         android:fontFamily="@font/montserratsemibold"
-                        android:textSize="15dp"
+                        android:textSize="18dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:text="Welcome,"/>
@@ -34,20 +35,141 @@
                         android:layout_gravity="left"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="20dp"
-                        android:fontFamily="@font/montserratbold"
+                        android:fontFamily="@font/montserratsemibold"
                         android:text="Yash Mehta"
                         android:textColor="#ffffff"
-                        android:textSize="20dp" />
+                        android:textSize="25dp" />
                 </LinearLayout>
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
                     android:layout_width="50dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="right"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right|center_vertical"
                     android:layout_marginRight="10dp"
                     android:src="@drawable/worker"
-                    android:layout_height="50dp"/>
-            </FrameLayout>
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#ffffff"/>
 
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:background="@color/rich_black"
+                        android:backgroundTint="#ffffff"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/image"
+                            android:layout_width="140dp"
+                            android:layout_margin="3dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/worker2"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#ffffff"/>
+                    </androidx.cardview.widget.CardView>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Capture"
+                        android:layout_marginRight="5dp"
+                        android:padding="10dp"
+                        android:id="@+id/cap_button"
+                        android:drawableLeft="@drawable/ic_baseline_camera_alt_24"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:text="Current Date"
+                        android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                        android:gravity="center"
+                        android:drawablePadding="10dp"
+                        android:textColor="#ffffff"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#888888"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:textSize="14dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="23-04-2002"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:text="Current Time"
+                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                        android:gravity="center"
+                        android:drawablePadding="10dp"
+                        android:textColor="#ffffff"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#888888"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:textSize="14dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="03:15 PM"/>
+                </LinearLayout>
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/montserratsemibold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:text="Current Location"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"/>
+            <com.google.android.gms.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_height="400dp"
+                android:id="@+id/map"/>
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/web"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_height="500dp"
+                tools:ignore="WebViewLayout" />
         </LinearLayout>
     </ScrollView>
 
